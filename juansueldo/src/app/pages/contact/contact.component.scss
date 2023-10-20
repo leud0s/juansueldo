@@ -1,0 +1,51 @@
+.contact {
+    width: 100%;
+    height: auto;
+    padding: 50px 10vw;
+    background: #fff;
+    text-align: center;
+  }
+  .contact__title{
+    margin-top: 10px;
+  }
+  .contact-form {
+    width: 100%;
+    margin-top: 100px;
+    position: relative;
+  }
+  
+  .contact-form input,
+  .message {
+    width: 100%;
+    display: block;
+    height: 50px;
+    padding: 20px;
+    border-radius: 5px;
+    background: #060708;
+    color: #fff;
+    border: none;
+    outline: none;
+    margin: 30px 0;
+    resize: none;
+  }
+  
+  .message {
+    height: 200px;
+  }
+  
+  .contact-form .name {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .name input {
+    width: 49%;
+    margin: 0;
+  }
+  
+  .btn-box {
+    width: 100wh;
+    display: flex;
+    justify-content: center;
+  }
+  
