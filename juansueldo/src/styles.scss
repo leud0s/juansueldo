@@ -7,3 +7,59 @@
   text-decoration: none;
   font-family: "Barlow", sans-serif;
 }
+body::-webkit-scrollbar {
+  width: 8px;
+  background: #060708;
+  height: 1px;
+}
+
+body::-webkit-scrollbar-thumb {
+  background: #B4F00A;
+  border-radius: 4px;
+  height: 1px;
+}
+.box {
+  width: 180px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #18181d;
+  overflow: hidden;
+  transform: skewY(-1deg);
+  margin-bottom: 10px;
+  margin-top: 10px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.box::before {
+  content: "";
+  position: absolute;
+  width: 30px;
+  height: 500%;
+  background: linear-gradient(#00ccff, #B4F00A);
+  animation: animate 4s linear infinite;
+}
+
+.box::after {
+  content: "";
+  position: absolute;
+  inset: 4px;
+  background: #fff;
+  border-radius: 5px;
+}
+@keyframes animate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.highlight {
+  background: linear-gradient(50deg, #B4F00A, #00ccff);
+  font-weight: bold;
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+}

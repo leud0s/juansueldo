@@ -99,7 +99,7 @@
     text-align: center;
     display: block;
     text-transform: uppercase;
-    font-size: 2.5rem;
+    font-size: 1.5rem;
     font-weight: 800;
   }
   .offcanvas{
@@ -111,5 +111,8 @@
 .nav-link{
     color: #ffff;
     font-size: 1.5rem;
-    margin: 15px;
+    //margin: 15px;
+}
+.nav-item{
+  margin: 45px;
 }

@@ -7,6 +7,9 @@ import { NavbarComponent } from './component/navbar/navbar.component';
 import { FooterComponent } from './component/footer/footer.component';
 import { CardsComponent } from './component/cards/cards.component';
 import { HomeComponent } from './pages/home/home.component';
+import { WelcomeComponent } from './component/welcome/welcome.component';
+import { AboutComponent } from './pages/about/about.component';
+import { SkillCardComponent } from './component/skill-card/skill-card.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +17,10 @@ import { HomeComponent } from './pages/home/home.component';
     NavbarComponent,
     FooterComponent,
     CardsComponent,
-    HomeComponent
+    HomeComponent,
+    WelcomeComponent,
+    AboutComponent,
+    SkillCardComponent
   ],
   imports: [
     BrowserModule,

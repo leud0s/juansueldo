@@ -1,0 +1,88 @@
+.about {
+    width: 100%;
+    height: auto;
+    padding: 50px 10vw;
+    background: #FFFFF0;
+  }
+  .about__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .title {
+    text-align: center;
+    font-weight: bold;
+    font-size: 3.5rem;
+    color: #060708;
+  }
+  
+  .about__container__title__text {
+    font-size: 1rem;
+    font-weight: bold;
+    margin: 10px;
+    opacity: 0.7;
+    color: #060708;
+    text-align: center;
+  }
+  
+  .container-btn {
+    position: relative;
+    width: 180px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #fff;
+    overflow: hidden;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .container-btn::before {
+    content: "";
+    position: absolute;
+    width: 30px;
+    height: 500%;
+    background: linear-gradient(#00ccff, #B4F00A);
+    animation: animate 4s linear infinite;
+  }
+  
+  .box-btn::after {
+    content: "";
+    position: absolute;
+    inset: 4px;
+    border-radius: 5px;
+  }
+  
+  .download {
+    color: #fff;
+    height: 94%;
+    width: 94%;
+    border-radius: 4px;
+    border: none;
+    outline: none;
+    background: #060708;
+    position: relative;
+    font-size: 1em;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  
+  .download:hover {
+    color: #060708;
+    background: #B4F00A;
+  }
+  
+  .skill-container {
+    position: relative;
+    margin-top: 100px;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: repeat(5, 1fr);
+    grid-gap: 20px;
+  }
+  
+  
