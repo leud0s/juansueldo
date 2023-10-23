@@ -1,39 +1,39 @@
 export const skills=[
     {
         name: 'C',
-        img: ''
+        img: 'https://img.icons8.com/color/480/c-programming.png'
     },
     {
         name: 'C#',
-        img: ''
+        img: 'https://img.icons8.com/color/480/000000/c-sharp-logo.png'
     },
     {
         name: '.NET',
-        img: ''
+        img: 'https://img.icons8.com/color/480/net-framework.png'
     },
     {
         name: 'JavaScript',
-        img: ''
+        img: 'https://img.icons8.com/color/480/javascript--v1.png'
     },
     {
         name: 'HTML',
-        img: ''
+        img: 'https://img.icons8.com/color/480/html-5--v1.png'
     },
     {
         name: 'CSS',
-        img: ''
+        img: 'https://img.icons8.com/fluency/480/css3.png'
     },
     {
         name: 'SASS',
-        img: ''
+        img: 'https://img.icons8.com/color/480/sass-avatar.png'
     },
     {
         name: 'PHP',
-        img: ''
+        img: 'https://img.icons8.com/officel/480/php-logo.png'
     },
     {
         name: 'CodeIgniter',
-        img: ''
+        img: 'https://img.icons8.com/external-tal-revivo-shadow-tal-revivo/480/external-codeigniter-is-an-open-source-software-rapid-development-web-framework-logo-shadow-tal-revivo.png'
     },
     {
         name: 'Postman',
@@ -49,7 +49,7 @@ export const skills=[
     },
     {
         name: 'Angular',
-        img: ''
+        img: 'https://img.icons8.com/color/480/angularjs.png'
     },
     {
         name: 'Ionic',
@@ -57,7 +57,7 @@ export const skills=[
     },
     {
         name: 'Firebase',
-        img: ''
+        img: 'https://img.icons8.com/external-tal-revivo-shadow-tal-revivo/480/external-firebase-a-googles-mobile-platform-that-helps-you-quickly-develop-high-quality-apps-logo-shadow-tal-revivo.png'
     },
     {
         name: 'Bootstrap',

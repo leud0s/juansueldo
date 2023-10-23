@@ -11,6 +11,6 @@
     </div>
     
     <div class="skill-container" *ngFor="let skill of skills">
-        <app-skill-card [img]="" [name]="{{skill.name}}"></app-skill-card>
+        <app-skill-card [img]="skill.img" [name]="skill.name"></app-skill-card>
     </div>
 </section>

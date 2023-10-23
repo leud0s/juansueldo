@@ -6,6 +6,6 @@ import { Component, Input } from '@angular/core';
   styleUrls: ['./skill-card.component.scss']
 })
 export class SkillCardComponent {
-  @Input() img!: string;
-  @Input() name!: string;
+  @Input() img!: any;
+  @Input() name!: any;
 }
