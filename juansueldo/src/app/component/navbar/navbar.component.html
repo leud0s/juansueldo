@@ -2,25 +2,25 @@
     <div class="container-fluid">
         <a href="#" class="header__navbar__logo">Juan <span class="header__navbar__logo__span--green" id="color">Sueldo</span></a>
         
-      <button class="header__navbar__toggle-btn navbar-toggler navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+      <button class="header__navbar__toggle-btn navbar-toggler navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" (click)="toggleButton()" [ngClass]="{'active': isToggled}">
         <span></span>
         <span></span>
         <span></span>
       </button>
       <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
-      <div class="dropdown">
-        <li class="nav-item dropdown">
-            <a routerLink="/home" class="header__navbar__menu__link is-active">Inicio</a>
-          </li>
-          <li class="nav-item dropdown">
-            <a routerLink="/about" class="header__navbar__menu__link">Sobre mi</a>
-          </li>
-          <li class="nav-item dropdown">
-            <a routerLink="/projects" class="header__navbar__menu__link">Proyectos</a>
-          </li>
-          <li class="nav-item dropdown">
-            <a routerLink="/contact" class="header__navbar__menu__link">Contacto</a>
-          </li>
+        <div class="dropdown">
+          <button type="button" class="btn header__navbar__toggle__close-btn navbar-toggler navbar-toggler" data-bs-dismiss="offcanvas" aria-label="Close">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+
+          <ul>
+            <li *ngFor="let item of items" class="nav-item dropdown">
+              <a [ngClass]="{'isActive': item.title === activeItem}" routerLink="{{item.router}}" (click)="setActiveItem(item.title)" data-bs-dismiss="offcanvas" aria-label="Close">{{ item.title }}</a>
+            </li>
+          </ul>
+
     </div>
     </div>
     </div>

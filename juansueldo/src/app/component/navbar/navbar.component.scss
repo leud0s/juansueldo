@@ -116,3 +116,43 @@
 .nav-item{
   margin: 45px;
 }
+
+.header__navbar__toggle__close-btn {
+  position: absolute;
+  width: 50px;
+  height: 15%;
+  top: 10px;
+  right: 15px;
+  cursor: pointer;
+}
+
+.header__navbar__toggle__close-btn span {
+  display: block;
+  width: 33px;
+  height: 4px;
+  margin-bottom: 5px;
+  position: relative;
+  background: #fff;
+  border-radius: 6px;
+  transform-origin: 0 0;
+  transition: 0.4s;
+}
+
+.header__navbar__toggle__close-btn span:nth-child(1) {
+  transform: translate(0px, -2px) rotate(45deg);
+  background-color: #B4F00A;
+}
+
+.header__navbar__toggle__close-btn span:nth-child(2) {
+  opacity: 0;
+  transform: translateX(15px);
+}
+
+.header__navbar__toggle__close-btn span:nth-child(3) {
+  transform: translate(-3px, 3px) rotate(-45deg);
+  background-color: #B4F00A;
+}
+.isActive {
+  color: #B4F00A; /* Cambia esto a tu estilo deseado */
+}
+

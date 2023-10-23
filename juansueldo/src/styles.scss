@@ -63,3 +63,48 @@ body::-webkit-scrollbar-thumb {
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
 }
+.container-btn {
+  position: relative;
+  width: 180px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #fff;
+  overflow: hidden;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.container-btn::before {
+  content: "";
+  position: absolute;
+  width: 30px;
+  height: 500%;
+  background: linear-gradient(#00ccff, #B4F00A);
+  animation: animate 4s linear infinite;
+}
+
+.box-btn::after {
+  content: "";
+  position: absolute;
+  inset: 4px;
+  border-radius: 5px;
+}
+
+.download {
+  color: #fff;
+  height: 94%;
+  width: 94%;
+  border-radius: 4px;
+  border: none;
+  outline: none;
+  background: #060708;
+  position: relative;
+  font-size: 1em;
+  font-weight: bold;
+  cursor: pointer;
+}
+

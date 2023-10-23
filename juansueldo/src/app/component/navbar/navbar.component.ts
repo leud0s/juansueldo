@@ -1,4 +1,5 @@
 import { Component, ElementRef, ViewChild, AfterViewInit } from '@angular/core';
+import { items } from 'src/app/models/items.models';
 
 @Component({
   selector: 'app-navbar',
@@ -10,6 +11,9 @@ export class NavbarComponent {
   @ViewChild('menu') menu!: ElementRef;
   @ViewChild('button') button!: ElementRef;
   @ViewChild('buttonColor') buttonColor!: ElementRef;
+  isToggled: boolean = false;
+  activeItem: string = 'Inicio';
+  items: any = items; 
 
   ngAfterViewInit() {
     this.button.nativeElement.addEventListener('click', () => {
@@ -26,5 +30,12 @@ export class NavbarComponent {
       }
       this.toggleBtn.nativeElement.classList.toggle('is-active');
     });
+  }
+  toggleButton() {
+    this.isToggled = !this.isToggled;
+  }
+  setActiveItem(item: string) {
+    this.activeItem = item; 
+    console.log(this.activeItem);
   }
 }
