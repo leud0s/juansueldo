@@ -2,15 +2,22 @@
     <section class="contact" id="contact-section">
         <h2 class="contact__title title"><span class="highlight uppercase">Contacto</span></h2>
         <form (submit)="onSubmit()" [formGroup]="form" class="contact-form">
-            <div class="name">
-                <input class="form-control" [class.is-invalid]="form.get('name').errors" placeholder="Nombre" formControlName="name" type="text">
-                <small class="invalid-feedback">Nombre inválido (solo letras)</small>
+            <div class="name-lastName">
+                <div class="container-name">
+                    <input class="form-control" [class.is-invalid]="form.get('name').errors" placeholder="Nombre" formControlName="name" type="text">
+                    <small class="invalid-feedback">Nombre inválido (solo letras)</small>
+                </div>
+                <div class="container-lastName">
+                    <input class="form-control" [class.is-invalid]="form.get('lastName').errors" placeholder="Apellido" formControlName="lastName" type="text">
+                    <small class="invalid-feedback">Apellido inválido (solo letras)</small>
+                </div>
   
-                <input class="form-control" [class.is-invalid]="form.get('lastName').errors" placeholder="Apellido" formControlName="lastName" type="text">
-                <small class="invalid-feedback">Apellido inválido (solo letras)</small>
             </div>
-            <input class="form-control" [class.is-invalid]="form.get('email').errors" placeholder="Email" formControlName="email" type="email">
-            <small class="invalid-feedback">Email inválido</small>
+            <div class="container-email">
+                <input class="form-control" [class.is-invalid]="form.get('email').errors" placeholder="Email" formControlName="email" type="email">
+                <small class="invalid-feedback email-error">Email inválido</small>
+            </div>
+
             <textarea class="message" placeholder="Mensaje" formControlName="message"></textarea>
             <div class="btn-box">
                 <div class="container-btn">

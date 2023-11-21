@@ -33,19 +33,31 @@
     height: 200px;
   }
   
-  .contact-form .name {
+  .contact-form .name-lastName {
     display: flex;
     justify-content: space-between;
   }
   
-  .name input {
-    width: 49%;
-    margin: 0;
+
+  .container-name, .container-lastName{
+    width: 45vw;
+    padding: 0px 5px;
+    position: relative;
   }
-  
+  .container-email{
+    position: relative;
+  }
   .btn-box {
     width: 100wh;
     display: flex;
     justify-content: center;
+  }
+  small{
+    position: absolute;
+    bottom: 10px;
+  }
+  .email-error{
+    position: absolute;
+    bottom: -10px;
   }
   
