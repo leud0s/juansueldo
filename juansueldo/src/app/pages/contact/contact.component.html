@@ -1,17 +1,24 @@
-<section class="contact" id="contact-section">
-    <h2 class="contact__title title"><span class="highlight uppercase">Contacto</span></h2>
-    <form class="contact-form" action="https://formsubmit.co/juan.sueldo1989@gmail.com" method="POST">
-        <div class="name">
-            <input type="text" class="first-name" required placeholder="Nombre" name="nombre">
-            <input type="text" class="last-name" required placeholder="Apellido" name="apellido">
-        </div>
-        <input type="email" required class="email" placeholder="Email" name="email">
-        <textarea class="message" placeholder="Mensaje" required name="mensaje"></textarea>
-        <div class="btn-box">
-            <div class="container-btn">
-                <button class="download" type="submit"><span class="highlight">Enviar</span></button>
+<div [@fadeIn]>
+    <section class="contact" id="contact-section">
+        <h2 class="contact__title title"><span class="highlight uppercase">Contacto</span></h2>
+        <form (submit)="onSubmit()" [formGroup]="form" class="contact-form">
+            <div class="name">
+                <input class="form-control" [class.is-invalid]="form.get('name').errors" placeholder="Nombre" formControlName="name" type="text">
+                <small class="invalid-feedback">Nombre inválido (solo letras)</small>
+  
+                <input class="form-control" [class.is-invalid]="form.get('lastName').errors" placeholder="Apellido" formControlName="lastName" type="text">
+                <small class="invalid-feedback">Apellido inválido (solo letras)</small>
             </div>
-        </div>
-    </form>
-</section>
-<app-footer></app-footer>
+            <input class="form-control" [class.is-invalid]="form.get('email').errors" placeholder="Email" formControlName="email" type="email">
+            <small class="invalid-feedback">Email inválido</small>
+            <textarea class="message" placeholder="Mensaje" formControlName="message"></textarea>
+            <div class="btn-box">
+                <div class="container-btn">
+                    <button class="download" type="submit"><span class="highlight">Enviar</span></button>
+                </div>
+            </div>
+        </form>
+    </section>
+  </div>
+  <app-footer></app-footer>
+  
