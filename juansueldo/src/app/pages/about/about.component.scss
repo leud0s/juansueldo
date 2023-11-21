@@ -30,11 +30,8 @@
   
   .skill-container {
     position: relative;
-    margin-top: 100px;
-    display: grid;
-    grid-template-columns: 50% 50%;
-    grid-template-rows: repeat(5, 1fr);
-    grid-gap: 20px;
+    display: inline-block;
+    padding: 10px;
   }
   
   .avatar{
